@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>جزوه جامع و تعاملی آرتریت روماتوئید (Rheumatoid Arthritis) - دکتر دهقان</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap');
+
+    :root {
+      --primary:    #1a237e;
+      --secondary:  #283593;
+      --accent1:    #0277bd;
+      --accent2:    #00838f;
+      --accent3:    #6a1b9a;
+      --accent4:    #ad1457;
+      --accent5:    #e65100;
+      --bg:         #f0f4ff;
+      --card:       #ffffff;
+      --text:       #1a1a2e;
+      --muted:      #546e7a;
+      --border:     #c5cae9;
+      --green:      #1b5e20;
+      --greenlight: #e8f5e9;
+      --redlight:   #ffebee;
+      --red:        #b71c1c;
+      --yellowlight:#fff8e1;
+      --yellow:     #f57f17;
+      --bluelight:  #e3f2fd;
+      --blue:       #0d47a1;
+      --purplelight:#f3e5f5;
+      --purple:     #4a148c;
+      --teallight:  #e0f7fa;
+      --teal:       #006064;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    /* ===== COVER ===== */
+    .cover {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #0277bd 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 30px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 250px; height: 250px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50px;
+      padding: 6px 22px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .cover h1 {
+      font-size: 2.3em;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .cover h2 {
+      font-size: 1.25em;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .cover .meta {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cover .meta-item {
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-size: 13px;
+      backdrop-filter: blur(5px);
+    }
+    .cover .meta-item span { display: block; font-weight: 700; font-size: 15px; margin-top: 3px; }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: white;
+      margin: 30px auto;
+      max-width: 960px;
+      border-radius: 16px;
+      padding: 28px 35px;
+      box-shadow: 0 4px 20px rgba(26,35,126,0.08);
+      border-right: 6px solid var(--primary);
+    }
+    .toc h3 {
+      font-size: 1.2em;
+      color: var(--primary);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toc ol {
+      padding-right: 25px;
+    }
+    .toc ol li {
+      padding: 6px 0;
+      color: var(--accent1);
+      font-weight: 600;
+      font-size: 14.5px;
+    }
+    .toc ol li a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .toc ol li a:hover { color: var(--primary); }
+
+    /* ===== MAIN WRAPPER ===== */
+    .main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ===== SECTION HEADER ===== */
+    .section-header {
+      border-radius: 14px;
+      padding: 18px 25px;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-size: 1.25em;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .section-header .icon {
+      font-size: 1.4em;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sh-blue   { background: linear-gradient(135deg, #1565c0, #0288d1); }
+    .sh-purple { background: linear-gradient(135deg, #6a1b9a, #ab47bc); }
+    .sh-teal   { background: linear-gradient(135deg, #00695c, #26a69a); }
+    .sh-red    { background: linear-gradient(135deg, #b71c1c, #ef5350); }
+    .sh-orange { background: linear-gradient(135deg, #e65100, #ff7043); }
+    .sh-green  { background: linear-gradient(135deg, #1b5e20, #43a047); }
+    .sh-indigo { background: linear-gradient(135deg, #283593, #5c6bc0); }
+
+    /* ===== SUBSECTION ===== */
+    .subsection {
+      background: white;
+      border-radius: 12px;
+      padding: 24px 26px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-top: 4px solid transparent;
+    }
+    .sub-blue   { border-top-color: #1565c0; }
+    .sub-purple { border-top-color: #6a1b9a; }
+    .sub-teal   { border-top-color: #00695c; }
+    .sub-red    { border-top-color: #b71c1c; }
+    .sub-orange { border-top-color: #e65100; }
+    .sub-green  { border-top-color: #1b5e20; }
+    .sub-indigo { border-top-color: #283593; }
+
+    .subsection h4 {
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed var(--border);
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ===== INFO BOX ===== */
+    .infobox {
+      border-radius: 10px;
+      padding: 15px 18px;
+      margin: 15px 0;
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .infobox .ib-icon { font-size: 1.3em; flex-shrink: 0; margin-top: 1px; }
+    .ib-blue   { background: var(--bluelight);   border-right: 5px solid #1565c0; color: #0d1b5e; }
+    .ib-green  { background: var(--greenlight);  border-right: 5px solid #2e7d32; color: #1b3a1f; }
+    .ib-red    { background: var(--redlight);    border-right: 5px solid #c62828; color: #5c0000; }
+    .ib-yellow { background: var(--yellowlight); border-right: 5px solid #f9a825; color: #4a2c00; }
+    .ib-purple { background: var(--purplelight); border-right: 5px solid #6a1b9a; color: #2d0048; }
+    .ib-teal   { background: var(--teallight);   border-right: 5px solid #006064; color: #003033; }
+
+    /* ===== LIST STYLES (iOS/Safari Safe) ===== */
+    .list-styled {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .list-styled li {
+      padding: 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      border-bottom: 1px dotted #e8eaf6;
+    }
+    .list-styled li:last-child { border-bottom: none; }
+    .list-styled li::before {
+      content: '◈';
+      color: var(--accent1);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .list-styled.green li::before  { color: #2e7d32; }
+    .list-styled.red li::before    { color: #c62828; }
+    .list-styled.purple li::before { color: #6a1b9a; }
+    .list-styled.teal li::before   { color: #006064; }
+    .list-styled.orange li::before { color: #e65100; }
+
+    .li-content {
+      flex: 1;
+      display: inline;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    /* ===== TAGS / BADGES ===== */
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 2px 2px;
+    }
+    .tag-blue   { background: #e3f2fd; color: #0d47a1; }
+    .tag-red    { background: #ffebee; color: #b71c1c; }
+    .tag-green  { background: #e8f5e9; color: #1b5e20; }
+    .tag-purple { background: #f3e5f5; color: #4a148c; }
+    .tag-orange { background: #fff3e0; color: #e65100; }
+    .tag-teal   { background: #e0f7fa; color: #006064; }
+    .tag-yellow { background: #fff8e1; color: #f57f17; }
+
+    /* ===== TABLE ===== */
+    .table-wrap { overflow-x: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      background: white;
+    }
+    table thead tr {
+      background: var(--primary);
+      color: white;
+    }
+    table thead th {
+      padding: 12px 14px;
+      text-align: right;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    table tbody tr:nth-child(even) { background: #f8faff; }
+    table tbody tr:hover { background: #edf2ff; }
+    table tbody td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e0e4f8;
+      vertical-align: top;
+      line-height: 1.7;
+    }
+    table tbody tr:last-child td { border-bottom: none; }
+
+    /* ===== HIGHLIGHT BADGE ===== */
+    .hbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(135deg, #fff176, #ffee58);
+      color: #4a2c00;
+      border: 1px solid #f9a825;
+      border-radius: 8px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* ===== GRID 2-COL ===== */
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    @media(max-width:680px){ .grid2 { grid-template-columns: 1fr; } }
+
+    /* ===== MINI CARD ===== */
+    .mini-card {
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 13.5px;
+      line-height: 1.8;
+    }
+    .mc-blue   { background: #e8eaf6; border-right: 4px solid #3949ab; }
+    .mc-green  { background: #e8f5e9; border-right: 4px solid #388e3c; }
+    .mc-red    { background: #ffebee; border-right: 4px solid #e53935; }
+    .mc-purple { background: #f3e5f5; border-right: 4px solid #8e24aa; }
+    .mc-orange { background: #fff3e0; border-right: 4px solid #f4511e; }
+    .mc-teal   { background: #e0f7fa; border-right: 4px solid #00838f; }
+    .mini-card h5 { font-weight: 700; margin-bottom: 8px; font-size: 14.5px; color: var(--secondary); }
+
+    /* ===== KEY-VALUE ROW (iOS / Safari Fixed) ===== */
+    .kv-row {
+      padding: 7px 0;
+      font-size: 14px;
+      border-bottom: 1px dotted #e0e4f8;
+      line-height: 1.8;
+    }
+    .kv-row:last-child { border-bottom: none; }
+    .kv-key {
+      font-weight: 700;
+      color: var(--secondary);
+      display: inline;
+      margin-left: 6px;
+    }
+    .kv-value {
+      color: var(--text);
+      display: inline;
+    }
+
+    strong.em  { color: #b71c1c; font-weight: 700; }
+    strong.em2 { color: #1565c0; font-weight: 700; }
+    strong.em3 { color: #2e7d32; font-weight: 700; }
+    strong.em4 { color: #6a1b9a; font-weight: 700; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13.5px;
+      margin-top: 60px;
+      line-height: 1.8;
+    }
+
+    /* ===== سیستم تعاملی یادداشت‌های درون‌متنی مینیاتوری ===== */
+    .note-marker {
+      background-color: #ffd54f !important;
+      border: 1px solid #ffb300 !important;
+      color: #000 !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      padding: 1px 5px !important;
+      margin: 0 3px !important;
+      font-size: 11px !important;
+      user-select: none !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      font-weight: bold !important;
+      position: relative;
+      animation: notePulse 2s infinite;
+    }
+    @keyframes notePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    /* کدهای CSS خالص جهت سازگاری و نمایش یادداشت در نمایشگر فایل آفلاین iOS */
+    .note-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 130%;
+      right: 0;
+      background: #37474f;
+      color: #ffffff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      min-width: 190px;
+      max-width: 270px;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      white-space: normal;
+      line-height: 1.6;
+      font-weight: normal;
+      text-align: right;
+    }
+    .note-marker:hover .note-tooltip, .note-marker:active .note-tooltip {
+      display: block !important;
+    }
+
+    /* ===== ساختار پنجره مودال مدیریت یادداشت‌ها ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(26, 35, 126, 0.55);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      direction: rtl;
+    }
+    .modal-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 90%;
+      max-width: 520px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+      border-top: 5px solid var(--primary);
+    }
+    .modal-card h4 {
+      margin-bottom: 14px;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      resize: none;
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    .modal-textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-danger { background: var(--red); color: white; }
+    .btn-secondary { background: #eceff1; color: #37474f; }
+
+    /* ===== نوار ابزار تعاملی انتهای صفحه ===== */
+    #highlight-panel {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      border-radius: 50px;
+      padding: 9px 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid var(--primary);
+      direction: rtl;
+      width: max-content;
+      max-width: 95%;
+    }
+    #highlight-panel span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+    .hl-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: transform 0.1s;
+      flex-shrink: 0;
+    }
+    .hl-btn:hover { transform: scale(1.15); }
+    .hl-btn-yellow { background-color: #fff59d; }
+    .hl-btn-green  { background-color: #c8e6c9; }
+    .hl-btn-blue   { background-color: #bbdefb; }
+    .hl-btn-pink   { background-color: #f8bbd0; }
+    .panel-action-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 5px 11px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .panel-action-btn-red { background: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="badge">📘 درسنامه تخصصی روماتولوژی بالینی | پزشکی عمومی و دستیاری</div>
+  <h1>آرتریت روماتوئید (Rheumatoid Arthritis)</h1>
+  <h2>راهنمای جامع اتیولوژی، ایمونوپاتوژنز، نشانه‌های بالینی، معیارهای تشخیصی و راهکارهای درمانی نوین</h2>
+  <div class="meta">
+    <div class="meta-item">مدرس: <span>جناب آقای دکتر دهقان</span></div>
+    <div class="meta-item">نویسنده: <span>احمدرضا عبداللهی پور</span></div>
+    <div class="meta-item">برای دریافت فایل های بیشتر به بات تلگرامی مراجعه کنید
+                        
+<a href="https://t.me/Medical_house_bot" target="_blank" style="
+    display: inline-block;
+    padding: 5px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;">
+    🤖 شروع گفتگو با بات
+</a></div>
+  </div>
+</div>
+
+<!-- ===================== TOC ===================== -->
+<div class="toc">
+  <h3>📋 فهرست عناوین و سرفصل‌های درسنامه</h3>
+  <ol>
+    <li><a href="#sec-case-epi">مقدمه بالینی، معرفی کیس شماتیک و اپیدمیولوژی جهانی بیماری</a></li>
+    <li><a href="#sec-genetics-env">نقش تعیین‌کننده ژنتیک (HLA-DRB1) و محرک‌های محیطی (سیگار و پریودنتیت)</a></li>
+    <li><a href="#sec-pathogenesis">ایمونوپاتوژنز دقیق: سیترولیناسیون، سلول‌های T و B، پانوس و استئوکلاست‌ها</a></li>
+    <li><a href="#sec-articular">تظاهرات بالینی مفصلی، الگوی توزیع مفاصل درگیر و معاف و دفرمیتی‌ها</a></li>
+    <li><a href="#sec-extraarticular">تظاهرات خارج مفصلی (اکستراآرتیکولار) و سیستمیک بیماری</a></li>
+    <li><a href="#sec-diagnosis">رویکرد تشخیصی، پاراکلینیک، تصویربرداری و معیارهای طبقه‌بندی ۲۰۱۰ ACR-EULAR</a></li>
+    <li><a href="#sec-treatment">استراتژی‌های جامع درمانی: کورتیکواستروئیدها، DMARDs کلاسیک، بیولوژیک و مهارکننده‌های JAK</a></li>
+  </ol>
+</div>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<div class="main">
+
+  <!-- SECTION 1 -->
+  <div class="section-header sh-blue" id="sec-case-epi">
+    <div class="icon">🩺</div>
+    <span>بخش ۱: سناریوی بالینی، مروری بر کلیات و اپیدمیولوژی بیماری</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>معرفی کیس بالینی و توصیف شماتیک بیمار تیپیک</h4>
+    
+    <div class="infobox ib-blue">
+      <span class="ib-icon">👩‍⚕️</span>
+      <div>
+        <strong>سناریوی بالینی مراجع نمونه:</strong> خانم ۳۵ ساله‌ای با شکایت اصلی درد و تورم متقارن در مفاصل مچ دست، مفاصل متاکارپوفالانژیال (MCP)، مفاصل اینترفالانژیال پروگزیمال (PIP)، آرنج‌ها و مفاصل متاتارسوفالانژیال پا (MTP) مراجعه کرده است. بیمار هم‌زمان از خستگی مزمن و ناتوان‌کننده (Fatigue)، تب‌های با درجه پایین (Low-grade fever)، بی‌اشتهایی و کاهش وزن رنج می‌برد. در معاینه بالینی، مفاصل متورم، در لمس گرم و دارای تندرنس قابل توجه (Swollen, Tender, Warm) هستند.
+      </div>
+    </div>
+
+    <ul class="list-styled">
+      <li><span class="li-content"><strong class="em2">تعریف پلی‌آرتریت (Polyarthritis):</strong> هرگاه ۵ مفصل یا بیشتر به‌طور هم‌زمان دچار آرتریت و التهاب فعال باشند، بیماری در دسته پلی‌آرتریت طبقه‌بندی می‌شود.</span></li>
+      <li><span class="li-content"><strong class="em2">ماهیت بیماری:</strong> آرتریت روماتوئید یک بیماری التهابی، <strong class="em">مزمن (Chronic)</strong> و <strong class="em">سیستمیک (Systemic)</strong> است؛ به این معنا که تنها یک مفصل یا یک عضو را درگیر نمی‌کند، بلکه تمام بدن و ارگان‌های احشایی می‌توانند تحت تأثیر آبشار التهابی آن قرار گیرند.</span></li>
+      <li><span class="li-content"><strong class="em2">ویژگی پاتولوژیک مشخصه (Characteristic Feature):</strong> وجود <strong class="em">سینوویت التهابی مداوم و مزمن (Persistent Inflammatory Synovitis)</strong> در بافت سینوویال، با ترجیح درگیری مفاصل محیطی (Peripheral Joints) به‌صورت دوطرفه و قرینه (Symmetric).</span></li>
+      <li><span class="li-content"><strong class="em2">پیامد نهایی عدم درمان:</strong> التهاب مداوم سینوویوم به تخریب پیش‌رونده غضروف مفصلی (Cartilage Damage)، ایجاد خوردگی‌های استخوانی (Bone Erosions) و نهایتاً تخریب کامل و تغییر شکل غیرقابل بازگشت مفصل (Joint Destruction & Deformity) منتهی می‌شود.</span></li>
+    </ul>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>شیوع جهانی (Global Prevalence)</h5>
+        <div class="kv-row"><span class="kv-key">شیوع در جمعیت بالغ:</span><span class="kv-value">حدود ۰/۵ تا ۱ درصد جمعیت عمومی.</span></div>
+        <div class="kv-row"><span class="kv-key">توزیع جغرافیایی:</span><span class="kv-value">شیوع در آسیا و آفریقا کمتر و در برخی جمعیت‌های بومی آمریکا (Indigenous) و اروپا بالاتر گزارش شده است.</span></div>
+      </div>
+      <div class="mini-card mc-purple">
+        <h5>تفاوت بر حسب جنسیت (Gender Disparity)</h5>
+        <div class="kv-row"><span class="kv-key">نسبت زن به مرد:</span><span class="kv-value">۲ تا ۳ برابر شایع‌تر در زنان (نسبت ۲:۱ تا ۳:۱).</span></div>
+        <div class="kv-row"><span class="kv-key">علت ترجیح جنسی:</span><span class="kv-value">تأثیر هورمون‌های استروژنی، سیستم ایمنی ذاتی و عوامل مرتبط با ژن‌های متصل به کروموزوم X.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-header sh-indigo" id="sec-genetics-env">
+    <div class="icon">🧬</div>
+    <span>بخش ۲: بنیاد ژنتیکی بیماری و محرک‌های محیطی</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>شواهد ژنتیکی در بروز آرتریت روماتوئید</h4>
+    <p>آرتریت روماتوئید یک بیماری پلی‌ژنیک است. شواهد متعددی دال بر نقش پررنگ زمینه ژنتیکی در استعداد ابتلا به بیماری وجود دارد:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>شاخص ژنتیکی</th>
+            <th>میزان افزایش ریسک / شیوع</th>
+            <th>اهمیت و کاربرد بالینی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>بستگان درجه اول (First-Degree Relatives)</strong></td>
+            <td>افزایش ریسک ۲ تا ۱۰ برابری نسبت به جمعیت عادی</td>
+            <td>نشان‌دهنده استعداد توارثی خانوادگی در ابتلا به بیماری.</td>
+          </tr>
+          <tr>
+            <td><strong>دوقلوهای تک‌تخمی (Monozygotic Twins)</strong></td>
+            <td>میزان همگامی (Concordance) ۱۵ تا ۲۰ درصد</td>
+            <td>مهم‌ترین شاهد ژنتیکی؛ عدم رسیدن به ۱۰۰٪ نشان می‌دهد ژنتیک به تنهایی کافی نیست و عوامل محیطی الزامی هستند.</td>
+          </tr>
+          <tr>
+            <td><strong>ژن HLA-DRB1 (آلل‌های مرتبط نظیر *0401)</strong></td>
+            <td>حاوی اپی‌توپ مشترک (Shared Epitope: اسیدهای آمینه ۷۰ تا ۷۴)</td>
+            <td>ارتباط بسیار قوی با افزایش ریسک بیماری، تولید Anti-CCP، شدت تخریب مفصلی و تظاهرات خارج مفصلی.</td>
+          </tr>
+          <tr>
+            <td><strong>احتمال نفوذ بیماری در ناقلین (Carriers)</strong></td>
+            <td>۱ در ۲۵ نفر (1 in 25)</td>
+            <td>حتی در صورت وجود ژن مستعدکننده، تنها ۴٪ افراد مبتلا می‌شوند که نشانگر لزوم تلاقی با محرک‌های محیطی است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>مفهوم Shared Epitope (اپی‌توپ مشترک):</strong> توالی اسیدهای آمینه در موقعیت‌های ۷۰ الی ۷۴ زنجیره بتای گیرنده HLA-DRB1 در افراد مستعد یکسان و حفاظت‌شده است. وجود این اپی‌توپ میل ترکیبی شیار ارائه آنتی‌ژن را برای اتصال به پپتیدهای سیترولینه‌شده به‌شدت افزایش می‌دهد و سیستم ایمنی را علیه آنتی‌ژن‌های خودی برمی‌انگیزد.
+      </div>
+    </div>
+
+    <h4>عوامل خطرساز محیطی (Environmental Factors)</h4>
+    <p>عوامل محیطی متعددی در افراد دارای استعداد ژنتیکی، جرقه فعال‌سازی سیستم ایمنی را رقم می‌زنند:</p>
+
+    <ul class="list-styled red">
+      <li><span class="li-content"><strong class="em">مصرف دخانیات و سیگار (Smoking):</strong> شایع‌ترین و قوی‌ترین عامل محیطی شناخته‌شده با ریسک نسبی (Relative Risk) بین <strong>۱/۵ تا ۳/۵</strong>. مصرف سیگار به‌طور اختصاصی موجب القای فرآیند سیترولیناسیون در بافت مخاطی برونش، افزایش احتمال مثبت شدن Anti-CCP، شدت بالای اروژن‌های مفصلی و افزایش معنادار درگیری‌های خارج مفصلی می‌شود. این اثر تشدیدکننده به‌ویژه در زنان سیگاری (با ریسک ۲/۵ برابر بالاتر) نمایان‌تر است.</span></li>
+      <li><span class="li-content"><strong class="em">عفونت‌های دهان و لثه (پریودنتیت - Periodontitis):</strong> باکتری‌های پاتوژن لثه نظیر <em>Porphyromonas gingivalis</em> دارای آنزیم اختصاصی پپتیدیل آرژینین دآمیناز هستند که مستقیماً باعث افزایش تبدیل آرژینین به سیترولین (Citrullination) در مخاط دهان می‌شوند. استعمال سیگار با افزایش تغییرات فلور میکروبی دهان و تشدید پریودنتیت، این زنجیره را مضاعف می‌کند.</span></li>
+      <li><span class="li-content"><strong class="em">چاقی (Obesity):</strong> بافت چربی به‌عنوان یک ارگان اندوکرین، مقادیر فراوانی از آدیپوکین‌ها و سایتوکاین‌های پیش‌التهابی ترشح کرده و ریسک بیماری را بالا می‌برد.</span></li>
+      <li><span class="li-content"><strong class="em">مواجهه‌های شغلی و استنشاقی:</strong> تماس با ذرات سیلیس (Silica Exposure) در کارگران معادن و ساختمانی، تماس با روغن‌های معدنی (Mineral Oil) و حلال‌های آلی (Organic Solvents).</span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section-header sh-teal" id="sec-pathogenesis">
+    <div class="icon">🔬</div>
+    <span>بخش ۳: ایمونوپاتوژنز و آبشار التهابی مفصلی</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>مکانیسم سیترولیناسیون و شکل‌گیری آنتی‌بادی‌های ضد پپتید سیترولینه (Anti-CCP)</h4>
+    <p>در فیزیولوژی عادی سلول، آنزیمی داخل‌سلولی به نام <strong>PAD4 (پپتیدیل آرژینین دآمیناز ۴)</strong> به شکل غیرفعال وجود دارد. در شرایط التهابی و تحت تأثیر سایتوکاین‌ها، این آنزیم فعال می‌گردد:</p>
+
+    <div class="infobox ib-teal">
+      <span class="ib-icon">⚙️</span>
+      <div>
+        <strong>چرخه بیوشیمیایی سیترولیناسیون:</strong>
+        <br>
+        آنزیم PAD4 به زنجیره پروتئین‌ها متصل شده و اسید آمینه <strong>آرژینین (Arginine)</strong> با بار مثبت را به اسید آمینه خنثی <strong>سیترولین (Citrulline)</strong> دآمینه می‌کند. پروتئین سیترولینه‌شده تغییر ساختار فضایی داده و توسط سیستم ایمنی به عنوان یک «اتوآنتی‌ژن بیگانه» شناسایی می‌گردد. سلول‌های ماکروفاژ این اتوآنتی‌ژن را بلعیده و به سلول‌های T عرضه می‌کنند؛ لنفوسیت B تحریک شده و بر علیه آن، <strong>Anti-CCP (ACPA)</strong> ترشح می‌کند.
+      </div>
+    </div>
+
+    <h4>چهار مرحله آبشار پاتوژنز آرتریت روماتوئید (Pathogenesis Cascade)</h4>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>۱. فعال‌سازی لنفوسیت T (T-Cell Activation)</h5>
+        <p>سلول‌های ارائه‌دهنده آنتی‌ژن (APC نظیر دندریتیک و ماکروفاژ) از طریق گیرنده HLA-DR آنتی‌ژن را به لنفوسیت‌های CD4+ T ارائه می‌دهند. برای فعال‌سازی قطعی، نیاز به سیگنال کمکی (Co-stimulation) از طریق اتصال گیرنده <strong>CD80/CD86</strong> بر روی APC به <strong>CD28</strong> روی سطح سلول T است. سلول‌های T تمایز یافته به سمت رده‌های <strong>Th1</strong> (ترشح IFN-γ و TNF-α) و <strong>Th17</strong> (ترشح IL-17، TNF-α، IL-6 و GM-CSF) پیش می‌روند.</p>
+      </div>
+
+      <div class="mini-card mc-teal">
+        <h5>۲. ترشح سایتوکاین‌ها (Cytokine Release)</h5>
+        <p>سلول‌های T فعال، ماکروفاژهای سینوویال و فیبروبلاست‌ها را به‌شدت تحریک می‌کنند. این سلول‌ها سایتوکاین‌های کلیدی پیش‌التهابی نظیر <strong>TNF-α</strong>، <strong>IL-1</strong> و <strong>IL-6</strong> را در مقادیر انبوه درون حفره مفصلی ترشح می‌کنند. این فاکتورها سبب احضار لکوسیت‌های بیشتر، رگ‌زایی (آنژیوژنز) و تشدید فزاینده التهاب سینوویوم می‌گردند.</p>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>۳. هیپرپلازی سینوویال و تشکیل پانوس (Pannus)</h5>
+        <p>التهاب مزمن منجر به هیپرتروفی و هیپرپلازی شدید سینوویوسیت‌ها (سلول‌های تیپ A شبه‌ماکروفاژ و تیپ B شبه‌فیبروبلاست) می‌شود. سینوویوم ضخیم و تهاجمی که <strong>پانوس (Pannus)</strong> نام دارد، تشکیل شده و با ترشح کلاژنازها و آنزیم‌های متالوپروتئیناز ماتریکس (MMPs)، مستقیماً غضروف مفصلی و استخوان زیرین را می‌خورد و تخریب می‌کند.</p>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>۴. فعال‌سازی کمپلمان و استئوکلاست‌ها</h5>
+        <p>اتصال لنفوسیت T به B از طریق <strong>CD40L به CD40</strong> سبب تولید آنتی‌بادی‌های RF و Anti-CCP می‌گردد. تشکیل کمپلکس‌های ایمنی و فعال شدن آبشار کمپلمان التهاب را صدچندان می‌کند. هم‌زمان، ترشح فاکتورهایی مانند RANKL و TNF-α سبب تمایز ماکروفاژها به <strong>استئوکلاست‌های فعال (Osteoclasts)</strong> شده و پدیده استخوان‌خواری، خوردگی حاشیه‌ای (Marginal Erosions) و استئوپنی پدید می‌آید. مهار مسیر Wnt توسط سایتوکاین Dkk-1 نیز مانع ترمیم استخوان توسط استئوبلاست‌ها می‌شود.</p>
+      </div>
+    </div>
+
+    <div class="infobox ib-purple">
+      <span class="ib-icon">🧠</span>
+      <div>
+        <strong>محور عصبی-اندوکرین-ایمنی (Neuro-Endocrine Loop):</strong> در بیماران آرتریت روماتوئید، فعالیت محور هیپوتالاموس-هیپوفیز-آدرنال (HPA Axis) دچار اختلال است. ترشح فیزیولوژیک کورتیزول پلاسما کاهش یافته و آنزیم‌های 11β-HSD1 و 11β-HSD2 دستخوش تغییر می‌شوند؛ در نتیجه مهار طبیعی التهاب توسط گلوکوکورتیکوئیدهای اندوژن مختل شده و بیماری شعله‌ور می‌ماند.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-header sh-purple" id="sec-articular">
+    <div class="icon">🖐️</div>
+    <span>بخش ۴: تظاهرات بالینی مفصلی و دفرمیتی‌ها</span>
+  </div>
+
+  <div class="subsection sub-purple">
+    <h4>شروع بیماری و نشانه‌های التهابی مفصل</h4>
+    
+    <div class="kv-row"><span class="kv-key">نحوه شروع (Onset):</span><span class="kv-value">در دو سوم (۲/۳) بیماران، بیماری با علائم عمومی تدریجی و غیراختصاصی (Prodrome) شامل ضعف عمومی، خستگی شدید، کاهش وزن، بی‌اشتهایی و تب خفیف شروع شده و هفته‌ها تا ماه‌ها قبل از آرتریت ادامه دارد.</span></div>
+    <div class="kv-row"><span class="kv-key">طبیعت درد:</span><span class="kv-value">درد با ماهیت <strong class="em">التهابی (Inflammatory Pain)</strong> است؛ برعکس دردهای مکانیکی (نظیر آرتروز) که با فعالیت بدتر می‌شوند، درد روماتوئید در استراحت شدیدتر بوده، نیمه‌شب بیمار را از خواب بیدار می‌کند و صبح‌ها در بدترین وضعیت است.</span></div>
+    <div class="kv-row"><span class="kv-key">خشکی صبحگاهی (Morning Stiffness):</span><span class="kv-value">یکی از پایدارترین و مهم‌ترین علائم بیماری است. مدت زمان خشکی صبحگاهی <strong class="em">بیش از ۱ ساعت (>1h)</strong> بوده و گاه تا ظهر به طول می‌انجامد. با گرم شدن و تحرک مفاصل در طول روز بهبودی نسبی می‌یابد.</span></div>
+    <div class="kv-row"><span class="kv-key">علائم سینوویت در معاینه:</span><span class="kv-value">تورم (Swelling)، تندرنس در لمس خط مفصلی، گرمی موضعی (Warmth)، محدودیت دامنه حرکات (Limitation of motion) و سینوویوم اسفنجی و ضخیم‌شده قابل لمس (Palpable Synovium). <strong class="em">نکته بسیار مهم: قرمزی (Erythema) شدید جزو علائم معمول آرتریت روماتوئید نیست و در صورت وجود، باید به فکر آرتریت چرکی یا کریستالی بود.</strong></span></div>
+
+    <h4>الگوی درگیری و مفاصل معاف از بیماری (Sparing)</h4>
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>مفاصل شایع و هدف درگیری</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content"><strong>مفاصل کوچک دست و پا:</strong> مچ دست (Wrists)، مفاصل متاتارسوفالانژیال (MTP)، MCPها و مفاصل PIP.</span></li>
+          <li><span class="li-content"><strong>مفاصل بزرگ اندام‌ها:</strong> زانوها، آرنج‌ها، مچ پا و مفاصل ساب‌تالار.</span></li>
+          <li><span class="li-content"><strong>مفاصل دیررس:</strong> شانه‌ها و هیپ‌ها (لگن) معمولاً در مراحل بعدی بیماری درگیر می‌شوند.</span></li>
+          <li><span class="li-content"><strong>سیر درگیری:</strong> در یک سوم موارد در آغاز ممکن است به‌صورت تک‌مفصلی (Monoarthritis) یا چندمفصلی محدود (Oligoarthritis) باشد، اما سرانجام به پلی‌آرتریت متقارن تبدیل می‌شود.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>مفاصل مصون و معاف (بسیار مهم در تشخیص افتراقی)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong class="em">مفاصل DIP (بند انتهایی انگشتان):</strong> در آرتریت روماتوئید درگیر نمی‌شوند! درگیری DIP قویاً به نفع استئوآرتریت (گره‌های هبردن) یا آرتریت پسوریاتیک است.</span></li>
+          <li><span class="li-content"><strong class="em">ستون فقرات کمری و توراسیک:</strong> لومبار و سینه کاملاً از گزند RA در امان هستند.</span></li>
+          <li><span class="li-content"><strong class="em">مفاصل ساکروایلیاک (SI joints):</strong> درگیر نمی‌شوند (درگیری آن‌ها نشانگر اسپوندیلوآرتریت‌ها است).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>استثنای درگیری ستون فقرات: مفصل آتلانتواکسیال (C1-C2)</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">🚨</span>
+      <div>
+        <strong>درگیری گردنی و خطر میلوپاتی فشاری نخاع:</strong>
+        <br>
+        تنها بخشی از ستون فقرات که در RA درگیر می‌شود، <strong>مفصل C1-C2 در مهره‌های گردنی</strong> است، زیرا بین زایده ادنتوئید مهره C2 (محور/Axis) و قوس قدامی مهره C1 (اطلس/Atlas) بافت سینوویال وجود دارد.
+        <br>
+        <strong>عوارض بالینی:</strong> التهاب سینوویوم این ناحیه رباط عرضی را سست کرده و منجر به <strong>نیمه‌دررفتگی آتلانتواکسیال (Atlantoaxial Subluxation)</strong> می‌گردد. بیمار با درد پشت سر (Occiput) مراجعه می‌کند. در صورت عدم تشخیص، خطر فشرده‌شدن نخاع گردنی (Cord Compression)، میلوپاتی، کوادری‌پلژی و حتی مرگ ناگهانی وجود دارد.
+        <br>
+        <strong>معیار تشخیصی گرافی ساده:</strong> افزایش فاصله ادنتوئید-اطلس به بیش از ۳ میلی‌متر در رادیوگرافی گردن در حالت خم‌شده (Flexion View).
+      </div>
+    </div>
+
+    <h4>دفرمیتی‌ها و تغییر شکل‌های اختصاصی اندام‌ها</h4>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>نام دفرمیتی</th>
+            <th>مکانیسم آناتومیک و مفصل درگیر</th>
+            <th>شرح بالینی و نقص عملکردی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>دفرمیتی Z دست (Z-Deformity)</strong></td>
+            <td>انحراف رادیال مچ دست + انحراف اولنار انگشتان در مفاصل MCP</td>
+            <td>دست بیمار شبیه حرف Z انگلیسی می‌شود؛ ناشی از ضعف کپسول مفصلی و تاندون‌های اکستنسور.</td>
+          </tr>
+          <tr>
+            <td><strong>دفرمیتی گردن قو (Swan-Neck Deformity)</strong></td>
+            <td><strong>هیپراکستنشن PIP + هایپرفلکشن DIP</strong></td>
+            <td>انگشتان ظاهری شبیه انحنای گردن قو پیدا می‌کنند (در انگشتان ۳ و ۴ شایع است).</td>
+          </tr>
+          <tr>
+            <td><strong>دفرمیتی جادکمه‌ای (Boutonnière)</strong></td>
+            <td><strong>هایپرفلکشن PIP + هیپراکستنشن DIP</strong></td>
+            <td>دقیقاً عکس گردن قو؛ ناشی از گسستگی زبانه مرکزی تاندون اکستنسور روی بند میانی انگشت.</td>
+          </tr>
+          <tr>
+            <td><strong>دفرمیتی شست (Hitchhiker / Z-Thumb)</strong></td>
+            <td>فلکشن مفاصل MCP اول + هیپراکستنشن مفصل اینترفالانژیال (IP) شست</td>
+            <td>اختلال شدید در عملکرد گرفتن اشیا با نوک انگشتان و شست (Pinching).</td>
+          </tr>
+          <tr>
+            <td><strong>تغییر شکل‌های پا (Foot Changes)</strong></td>
+            <td>هالوس والگوس (Hallux Valgus)، ساب‌لوکساسیون رو به کف پایی سرهای متاتارس، اورژن عقب‌پا</td>
+            <td>پهن‌شدن پنجه، انگشتان چکشی (Hammer toes)؛ بیمار هنگام راه‌رفتن احساس می‌کند روی قلوه‌سنگ قدم می‌گذارد.</td>
+          </tr>
+          <tr>
+            <td><strong>عوارض اطراف مفصلی (Periarticular)</strong></td>
+            <td>سندروم تونل کارپ (CTS) و کیست بیکر زانو (Baker's Cyst)</td>
+            <td>تکثیر سینوویوم مچ موجب فشردگی عصب مدین می‌شود؛ تجمع مایع در حفره پوپلیته زانو کیست بیکر می‌دهد.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-header sh-red" id="sec-extraarticular">
+    <div class="icon">🫀</div>
+    <span>بخش ۵: تظاهرات خارج مفصلی و ارگان‌های درگیر</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>ویژگی‌های کلی تظاهرات خارج مفصلی (Extra-articular Manifestations)</h4>
+    <p>در حدود <strong>۴۰ درصد بیماران مبتلا به آرتریت روماتوئید</strong>، یک یا چند تظاهر خارج مفصلی در سیر بیماری دیده می‌شود. وقوع این درگیری‌ها با عوامل زیر همبستگی مستقیم دارد:</p>
+    
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">📌</span>
+      <div>
+        <strong>عوامل همراه با درگیری‌های شدید احشایی:</strong>
+        تیتر بسیار بالای <strong>RF</strong>، تیتر بالای <strong>Anti-CCP</strong>، مصرف <strong>سیگار</strong>، وجود ندول‌های زیرجلدی، و داشتن آلل‌های اختصاصی ژن HLA-DRB1.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>ندول‌های روماتوئید (Rheumatoid Nodules)</h5>
+        <ul class="list-styled blue">
+          <li><span class="li-content">در <strong>۳۰ تا ۴۰ درصد</strong> بیماران ایجاد می‌شود و نشانگر بیماری سرومثبت شدید است.</span></li>
+          <li><span class="li-content"><strong>قوام در معاینه:</strong> سفت (Firm)، فاقد تندرنس و درد (Non-tender) و چسبیده به بافت زیرین و پریوست.</span></li>
+          <li><span class="li-content"><strong>محل‌های شایع:</strong> نواحی تحت فشار مکانیکی مداوم: بورس اولکرانون آرنج، سطح اولنار ساعد پروگزیمال، تاندون آشیل، پس‌سر (Occiput) و مفاصل MCP. ندول‌ها ممکن است درون ریه و پرده جنب نیز پدید آیند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-teal">
+        <h5>درگیری‌های ریوی (Pleuropulmonary)</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content"><strong>پلوریت و افیوژن پلور:</strong> شایع‌ترین تظاهر ریوی (در اتوپسی تا ۵۰٪ دیده می‌شود)، اما در اکثر بیماران بدون علامت بالینی است. مایع جنب اگزوداتیو با گلوکز بسیار پایین دارد.</span></li>
+          <li><span class="li-content"><strong>بیماری بینابینی ریه (ILD):</strong> مهم‌ترین تظاهر تهدیدکننده ریوی با سرفه‌های خشک و تنگی نفس پیش‌رونده. نکته امیدبخش: پاسخ درمانی RA-ILD به داروهای تضعیف‌کننده ایمنی از فرم ایدیوپاتیک بسیار بهتر است.</span></li>
+          <li><span class="li-content"><strong>ندول‌های ریوی:</strong> منفرد یا متعدد؛ نیازمند رد نئوپلاسم.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>درگیری قلبی‌عروقی (Cardiovascular)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>پریکاردیت (Pericarditis):</strong> در اکوکاردیوگرافی تا ۵۰٪ موارد یافت می‌شود ولی عموماً بی‌علامت است.</span></li>
+          <li><span class="li-content"><strong>نارسایی احتقانی قلب (CHF):</strong> به دلیل میوکاردیت و کاردیومیوپاتی ناشی از سایتوکاین‌ها.</span></li>
+          <li><span class="li-content"><strong class="em">بیماری ایسکمیک قلب (IHD / CAD):</strong> <span class="hbadge">شایع‌ترین علت مرگ بیماران RA</span>؛ التهاب شدید سیستمیک و آسیب اندوتلیال به آترواسکلروز زودرس و انفارکتوس منجر می‌شود. کم‌تحرکی ناشی از درد مفاصل این ریسک را دوچندان می‌کند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>درگیری‌های چشمی (Eye Manifestations)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content"><strong>اپی‌اسکلریت و اسکلریت:</strong> در کمتر از ۱ درصد موارد دیده می‌شود؛ بیشتر در بیماری طول‌کشیده. اسکلریت بسیار دردناک و خطرناک بوده و می‌تواند به سوراخ‌شدن کره چشم (Scleromalacia Perforans) بینجامد.</span></li>
+          <li><span class="li-content"><strong>سندروم شوگرن ثانویه (Secondary Sjögren's):</strong> در حدود <strong>۱۰ درصد</strong> بیماران با کراتوکونژونکتیویت سیکا (خشکی شدید چشم) و زروستومی (خشکی دهان) ظاهر می‌شود.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>سندروم فلتی (Felty's Syndrome) و خطر بدخیمی</h4>
+    <div class="infobox ib-red">
+      <span class="ib-icon">🩸</span>
+      <div>
+        <strong>تریاد سندروم فلتی:</strong>
+        بروز تریاد زیر در یک بیمار با آرتریت روماتوئید شدید و طول‌کشیده همراه با ندول:
+        <br>
+        <strong>۱. آرتریت روماتوئید مزمن ندولار (Nodular RA)</strong>
+        <br>
+        <strong>۲. اسپلنومگالی (Splenomegaly - طحال‌بزرگی)</strong>
+        <br>
+        <strong>۳. نوتروپنی انتخابی (Selective Neutropenia با گلبول سفید نوتروفیل PMN کمتر از ۱۵۰۰ سلول در میکرولیتر)</strong>
+        <br>
+        این بیماران به دلیل نقص ایمنی مستعد عفونت‌های شدید باکتریال هستند. غالباً با شک به لوسمی یا لنفوم به خون‌شناس ارجاع می‌شوند، اما علت زمینه همان RA است و درمان آن کنترل تهاجمی بیماری زمینه‌ای است.
+      </div>
+    </div>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>ریسک لنفوم (Lymphoma):</strong>
+        ریسک ابتلا به لنفوم در بیماران RA حدود <strong>۲ الی ۴ برابر</strong> جمعیت عادی است. شایع‌ترین نوع آن <strong>لنفوم سلول بزرگ B منتشره (Diffuse Large B-Cell Lymphoma - DLBCL)</strong> است. بیشترین فاکتورهای خطر بروز آن: فعالیت طولانی و بسیار شدید بیماری التهابی و وجود سندروم فلتی است.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section-header sh-orange" id="sec-diagnosis">
+    <div class="icon">📊</div>
+    <span>بخش ۶: رویکرد تشخیصی، یافته‌های پاراکلینیک و تصویربرداری</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>اصول بنیادین در تشخیص آرتریت روماتوئید</h4>
+    <div class="infobox ib-blue">
+      <span class="ib-icon">🩺</span>
+      <div>
+        <strong>قانون طلایی بالینی:</strong> هیچ علامت کلینیکی منفرد یا تست پاراکلینیکی آزمایشگاهی که <strong>پاتوگنومونیک (اختصاصی ۱۰۰٪)</strong> باشد برای آرتریت روماتوئید وجود ندارد! تشخیص بیماری تقریباً به‌طور کامل بر پایه <strong>شرح حال دقیق (History)</strong> و <strong>معاینه فیزیکی موشکافانه (Physical Examination)</strong> استوار است. یافته‌های آزمایشگاهی و تصویربرداری صرفاً در خدمت تأیید ظن بالینی هستند.
+      </div>
+    </div>
+
+    <h4>ارزیابی آزمون‌های سرولوژیک و بیوشیمیایی</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تست آزمایشگاهی</th>
+            <th>حساسیت و ویژگی</th>
+            <th>ارزش پیشگویی‌کننده و تفسیر تشخیصی</th>
+            <th>نکات مانیتورینگ و پیگیری</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>فاکتور روماتوئید (RF)</strong></td>
+            <td>حساسیت: ۷۵-۸۰٪<br>ویژگی: پایین (غیراختصاصی)</td>
+            <td>اتوآنتی‌بادی علیه بخش Fc مولکول IgG (معمولاً رده IgM). در ۵٪ افراد سالم جامعه، عفونت‌های هپاتیت C، سل، اندوکاردیت و سندروم شوگرن مثبت می‌شود. ارزش پیشگویی پایینی دارد؛ کمتر از ۱/۳ افراد با RF مثبت، مبتلا به RA هستند.</td>
+            <td><strong>ارزش پیش‌آگهی (Prognostic):</strong> تیتر بالا نشانگر بیماری مخرب و خارج مفصلی است. <strong>تکرار دوره‌ای در پیگیری پاسخ به درمان بی‌فایده است</strong> و نباید مداوم چک شود.</td>
+          </tr>
+          <tr>
+            <td><strong>آنتی‌بادی ضد CCP (Anti-CCP / ACPA)</strong></td>
+            <td>حساسیت: ۷۵-۸۰٪<br>ویژگی: <strong>بسیار بالا (۹۵٪)</strong></td>
+            <td>علیه پپتیدهای سیترولینه ساخته می‌شود. در ۱/۵٪ جمعیت عادی دیده می‌شود. ارزش تشخیصی فوق‌العاده‌ای دارد و حتی چندین سال قبل از آغاز علائم بالینی (Pre-clinical) در خون ظاهر می‌شود.</td>
+            <td><strong>فاکتور پیش‌آگهی بسیار قوی:</strong> مثبت بودن آن نویددهنده بیماری شدید، خوردگی استخوان و آسیب پایدار است. در صورت کشف اتفاقی در فرد بدون علامت، نیاز به شروع دارو نیست ولی پایش الزامی است.</td>
+          </tr>
+          <tr>
+            <td><strong>هماتولوژی و واکنش‌گرهای فاز حاد</strong></td>
+            <td>آنمی نورموکروم نورموسیتیک<br>ترومبوسیتوز التهابی<br>افزایش ESR و CRP</td>
+            <td>آنمی بیماری مزمن و پلاکت‌های بالا (ترومبوسیتوز واکنشی به عنوان Acute Phase Reactant) مستقیماً با شدت فعالیت بیماری و میزان التهاب سیستمیک همبستگی دارند.</td>
+            <td>ESR و CRP برای پایش دوره‌ای روند بهبودی و پاسخ به داروهای سرکوب‌گر التهاب کاربرد مؤثری دارند.</td>
+          </tr>
+          <tr>
+            <td><strong>آنالیز مایع مفصلی (Synovial Fluid)</strong></td>
+            <td>مایع التهابی کدر و ویسکوزیته پایین</td>
+            <td>شمارش لکوسیت‌ها معمولاً بین ۵,۰۰۰ تا ۵۰,۰۰۰ در میکرولیتر با غلبه نوتروفیل‌ها است. کشت منفی و فاقد کریستال‌های اورات یا پیروفسفات.</td>
+            <td>بیشترین کاربرد آن رد کردن فوری سپسیس مفصلی و آرتروپاتی‌های کریستالی (نقرس) است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>یافته‌های رادیوگرافی ساده (Plain Radiography) و پاتولوژی سینوویوم</h4>
+    <ul class="list-styled orange">
+      <li><span class="li-content"><strong class="em">مراحل آغازین (Early):</strong> تورم بافت نرم پیرامون مفاصل (Soft tissue swelling) و به دنبال آن استئوپنی حاشیه‌ای در مجاورت مفصل (Juxta-articular osteopenia) ناشی از ترشح سایتوکاین‌های مهارکننده استخوان‌سازی.</span></li>
+      <li><span class="li-content"><strong class="em">مراحل پیشرفته:</strong> کاهش قرینه و یکنواخت فاصله مفصلی (Loss of articular cartilage) به دلیل تخریب لایه غضروفی توسط آنزیم‌های پانوس.</span></li>
+      <li><span class="li-content"><strong class="em">مرحله تخریبی قطعی:</strong> ایجاد خوردگی‌های استخوانی (Bone Erosions) در لبه‌های مفصل که فاقد پوشش غضروفی محافظ هستند (Bare Area).</span></li>
+      <li><span class="li-content"><strong class="em">پاتولوژی بافتی سینوویوم:</strong> لایه نازک تک یا دولایه سینوویوم به غشای ضخیم و هیپرپلاستیک چندلایه سرشار از نفوذ لنفوسیت‌های T و B، پلاسماسل‌ها و رگ‌های نوتشکیل تبدیل شده که تحت عنوان پانوس به مغز استخوان و غضروف نفوذ می‌کند.</span></li>
+    </ul>
+
+    <h4>معیارهای طبقه‌بندی ۲۰۱۰ ACR-EULAR برای آرتریت روماتوئید</h4>
+    <p>این سیستم نمره‌دهی برای بیمارانی به کار می‌رود که دست‌کم یک مفصل با سینوویت کلینیکی واضح و بدون توجیه با بیماری دیگر داشته باشند. کسب <strong>نمره ۶ یا بیشتر از ۱۰ (Score ≥ 6)</strong> نشان‌دهنده ابتلای قطعی به آرتریت روماتوئید است:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>حیطه ارزیابی (Domain)</th>
+            <th>شرح وضعیت بالینی و آزمایشگاهی</th>
+            <th>امتیاز (Score)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5"><strong>الف) درگیری مفصلی (Joint Involvement)</strong><br><small>(۰ تا ۵ امتیاز)</small></td>
+            <td>۱ مفصل بزرگ (Large joint) درگیر</td>
+            <td><strong>۰</strong></td>
+          </tr>
+          <tr>
+            <td>۲ الی ۱۰ مفصل بزرگ درگیر</td>
+            <td><strong>۱</strong></td>
+          </tr>
+          <tr>
+            <td>۱ الی ۳ مفصل کوچک (Small joint) با یا بدون مفاصل بزرگ</td>
+            <td><strong>۲</strong></td>
+          </tr>
+          <tr>
+            <td>۴ الی ۱۰ مفصل کوچک درگیر</td>
+            <td><strong>۳</strong></td>
+          </tr>
+          <tr>
+            <td>بیش از ۱۰ مفصل درگیر (که دست‌کم یکی از آن‌ها مفصل کوچک باشد)</td>
+            <td><strong>۵</strong></td>
+          </tr>
+          <tr>
+            <td rowspan="3"><strong>ب) سرولوژی (Serology)</strong><br><small>(۰ تا ۳ امتیاز)</small></td>
+            <td>RF منفی و Anti-CCP منفی</td>
+            <td><strong>۰</strong></td>
+          </tr>
+          <tr>
+            <td>RF مثبت خفیف یا Anti-CCP مثبت خفیف (کمتر از ۳ برابر حد بالای نرمال)</td>
+            <td><strong>۲</strong></td>
+          </tr>
+          <tr>
+            <td>RF مثبت قوی یا Anti-CCP مثبت قوی (بیش از ۳ برابر حد بالای نرمال)</td>
+            <td><strong>۳</strong></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>ج) واکنش‌گرهای فاز حاد (Acute-Phase Reactants)</strong><br><small>(۰ تا ۱ امتیاز)</small></td>
+            <td>ESR و CRP هر دو در محدوده طبیعی (NL)</td>
+            <td><strong>۰</strong></td>
+          </tr>
+          <tr>
+            <td>ESR غیرطبیعی یا CRP غیرطبیعی (Abnormal)</td>
+            <td><strong>۱</strong></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>د) مدت زمان علائم (Duration of Symptoms)</strong><br><small>(۰ تا ۱ امتیاز)</small></td>
+            <td>مدت علائم کمتر از ۶ هفته</td>
+            <td><strong>۰</strong></td>
+          </tr>
+          <tr>
+            <td>مدت علائم ۶ هفته یا بیشتر (≥ 6 weeks)</td>
+            <td><strong>۱</strong></td>
+          </tr>
+          <tr style="background:#e8eaf6; font-weight:bold;">
+            <td colspan="2">مجموع نمرات جهت تأیید قطعی بیماری (Definite RA):</td>
+            <td><strong>امتیاز ۶ و بالاتر (≥ 6 / 10)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section-header sh-green" id="sec-treatment">
+    <div class="icon">💊</div>
+    <span>بخش ۷: راهبردهای جامع درمانی و داروشناسی نوین</span>
+  </div>
+
+  <div class="subsection sub-green">
+    <h4>اهداف نوین درمان و پارادایم Treat-to-Target (T2T)</h4>
+    <div class="infobox ib-green">
+      <span class="ib-icon">🎯</span>
+      <div>
+        <strong>تحول شگرف در چشم‌انداز درمانی آرتریت روماتوئید:</strong>
+        <br>
+        در گذشته (قبل از سال‌های ۱۹۹۰)، دیدگاهی ناامیدکننده نسبت به بیماری وجود داشت و اعتقاد بر این بود که تخریب مفصل و ناتوانی سرنوشت محتوم تمام بیماران است. اما امروزه استراتژی به سمت <strong>درمان زودهنگام و تهاجمی</strong> تغییر یافته است. استاد تأکید دارند: «اگر امروزه بیماری را دیدید که دچار دفرمیتی، تخریب استخوان و ازکارافتادگی مفصلی شده است، بدانید یا بیمار پیگیر درمان نبوده و دارو را مصرف نکرده، یا پزشک معالج مهارت و دانش کافی برای تجویز رژیم‌های نوین را نداشته است؛ چرا که امروزه توان مهار کامل بیماری وجود دارد.»
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-green">
+        <h5>اهداف کلیدی چهارگانه درمان (Treatment Goals)</h5>
+        <ul class="list-styled green">
+          <li><span class="li-content">تسکین سریع و کاهش کامل دردهای التهابی (Reduce pain).</span></li>
+          <li><span class="li-content">پیشگیری قطعی از بروز تغییر شکل و دفرمیتی مفاصل (Prevent deformity).</span></li>
+          <li><span class="li-content">حفظ تحرک و بازگرداندن عملکرد فیزیولوژیک مفصل (Normal joint function).</span></li>
+          <li><span class="li-content">حفظ توانایی اشتغال و روابط اجتماعی بدون افت کیفیت زندگی (Normal social function).</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>طبقه‌بندی دسته‌های دارویی در RA</h5>
+        <ul class="list-styled blue">
+          <li><span class="li-content"><strong>ضدالتهاب‌های غیراستروئیدی (NSAIDs):</strong> کنترل کوتاه‌مدت علائم در فاز حاد.</span></li>
+          <li><span class="li-content"><strong>گلوکوکورتیکوئیدها (کورتون‌ها):</strong> درمان پل (Bridge therapy) با دوز پایین.</span></li>
+          <li><span class="li-content"><strong>داروهای تعدیل‌کننده سنتی (csDMARDs):</strong> خط اول درمان شامل متوتروکسات.</span></li>
+          <li><span class="li-content"><strong>داروهای بیولوژیک (bDMARDs):</strong> ضد TNF، ضد IL-6، آنتی‌بادی ضد B و سیتوتوکسیک.</span></li>
+          <li><span class="li-content"><strong>مهارکننده‌های هدفمند مولکولی (tsDMARDs):</strong> مهارکننده‌های مسیر جانوس کیناز (JAK).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>۱. ضدالتهاب‌های غیراستروئیدی (NSAIDs)</h4>
+    <ul class="list-styled red">
+      <li><span class="li-content"><strong>داروها:</strong> ایبوپروفن، دیکلوفناک، ناپروکسن، ایندومتاسین و مسدودکننده‌های COX-2.</span></li>
+      <li><span class="li-content"><strong>مکانیسم و سرعت اثر:</strong> کوتاه‌اثر هستند؛ به‌سرعت درد و خشکی را تسکین می‌دهند اما به محض قطع، علائم بلافاصله بازمی‌گردد.</span></li>
+      <li><span class="li-content"><strong class="em">نقص بزرگ:</strong> <strong>به هیچ عنوان مانع ایجاد خوردگی استخوانی (Erosion) و تخریب غضروف نمی‌شوند!</strong> بنابراین هیچ جایگاهی در درمان طولانی‌مدت RA ندارند و باید از مصرف مزمن آن‌ها اجتناب کرد (Avoid chronic use).</span></li>
+      <li><span class="li-content"><strong>عوارض جانبی عمده:</strong> گاستریت، زخم پپتیک و خونریزی گوارشی، نارسایی و اختلال عملکرد کلیه و خطرات قلبی‌عروقی.</span></li>
+    </ul>
+
+    <h4>۲. گلوکوکورتیکوئیدها (Glucocorticoids)</h4>
+    <ul class="list-styled teal">
+      <li><span class="li-content"><strong>جایگاه بالینی:</strong> شروع اثر بسیار سریع دارند. در ابتدای تشخیص به عنوان درمان پلی (Bridge Therapy) استفاده می‌شوند تا بیمار در بازه چند هفته‌ای که طول می‌کشد تا داروهای اساسی (DMARDs) اثر کنند، بدون علامت بماند.</span></li>
+      <li><span class="li-content"><strong class="em3">مزیت کلیدی دوز پایین:</strong> دوزهای پایین پردنیزولون (معادل <strong>۷/۵ میلی‌گرم یا کمتر در روز</strong>) می‌توانند <strong class="em">پیشرفت رادیوگرافیک تخریب استخوان را مهار کنند (Retard radiographic progression)</strong>.</span></li>
+      <li><span class="li-content"><strong>اشکال مصرف:</strong> خوراکی با دوز پایین روزانه، تزریق موضعی داخل مفصلی (Intra-articular) در موارد مونوآرتریت مقاوم، و پالس‌های وریدی با دوز بالا (Pulse Therapy) در درگیری‌های شدید تهدیدکننده حیات (نظیر واسکولیت روماتوئید).</span></li>
+      <li><span class="li-content"><strong class="em">عوارض جانبی نیازمند پایش:</strong> استئوپروز (پوکی استخوان)، نکروز آواسکولار سر استخوان ران (AVN)، چاقی و فرم کوشینگوئید، پرفشاری خون، عدم تحمل گلوکز و دیابت، و افزایش خطر عفونت‌ها. هدف همواره کاهش تدریجی تا قطع یا رساندن به حداقل دوز ممکن است.</span></li>
+    </ul>
+
+    <h4>۳. داروهای تعدیل‌کننده بیماری ضد روماتیسمی سنتی (csDMARDs)</h4>
+    <p>ویژگی شاخص این داروها، <strong>شروع اثر با تأخیر (Delayed onset of action بین ۶ تا ۱۲ هفته)</strong> است؛ لذا تا شروع اثر آن‌ها باید هم‌زمان از کورتیکواستروئیدها با دوز پایین بهره برد.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>نام دارو</th>
+            <th>دوزاژ و نحوه مصرف</th>
+            <th>عوارض جانبی شاخص</th>
+            <th>نکات طلایی بالینی و موارد احتیاط</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>متوتروکسات<br>(Methotrexate - MTX)</strong></td>
+            <td><strong>داروی خط اول و انتخاب نخست (First Choice)</strong><br>تجویز منحصراً به‌صورت <strong>یک‌بار در هفته (Once weekly)</strong>؛ به هیچ وجه روزانه مصرف نشود!</td>
+            <td>زخم‌های دهانی (Oral ulcers)، تهوع، آلوپسی (ریزش مو)، سمیت کبدی (Hepatotoxicity)، سرکوب مغز استخوان (Myelosuppression).</td>
+            <td><strong>تجویز هم‌زمان اسید فولیک:</strong> مصرف اسید فولیک برای کاهش ریزش مو، تهوع و آفت‌های دهانی الزامی است.<br><strong class="em">ممنوعیت مطلق در بارداری (Avoid pregnancy):</strong> تراتوژنیک است و زن یا مرد قبل از اقدام به بارداری باید آن را قطع کنند. آزمایش‌های دوره‌ای CBC و آنزیم‌های کبدی الزامی است.</td>
+          </tr>
+          <tr>
+            <td><strong>لفرونوماید<br>(Leflunomide)</strong></td>
+            <td>اثربخشی مشابه متوتروکسات دارد (Efficacy similar to MTX).</td>
+            <td>آلوپسی، سمیت کبدی، سرکوب مغز استخوان، افزایش فشار خون و اسهال.</td>
+            <td><strong class="em">ممنوعیت در بارداری:</strong> تراتوژنیک شدید؛ در صورت تمایل به بارداری نیاز به پروتکل پاک‌سازی فعال با کلستیرامین دارد. پایش آنزیم‌های کبدی و CBC ضروری است.</td>
+          </tr>
+          <tr>
+            <td><strong>هیدروکسی‌کلروکین<br>(Hydroxychloroquine - HCQ)</strong></td>
+            <td>اثربخشی ملایم‌تر؛ در موارد زودرس، خفیف و غیرفرسایشی یا در درمان‌های ترکیبی (مانند Triple Therapy).</td>
+            <td>تهوع خفیف، راش پوستی، تجمع رنگدانه، و به‌ندرت رتینوپاتی ماکولار (Bull's eye).</td>
+            <td><strong>پایش سالانه چشم‌پزشکی (Ophthalmologic monitoring):</strong> باید در شروع و به‌طور ویژه <strong>پس از ۵ سال مصرف</strong> به‌صورت منظم سالانه انجام گیرد. در بارداری نسبتاً ایمن است.</td>
+          </tr>
+          <tr>
+            <td><strong>سولفاسالازین<br>(Sulfasalazine)</strong></td>
+            <td>داروی کارآمد با اثر تعدیل‌کننده بیماری؛ مصرف روزانه خوراکی.</td>
+            <td>تهوع و سوءهاضمه گوارشی، سرکوب مغز استخوان (لکوسیتوپنی)، اختلال آنزیم‌های کبدی، راش‌های پوستی و تغییر رنگ ادرار به نارنجی.</td>
+            <td>پایش دوره‌ای CBC در ماه‌های اول تجویز الزامی است.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>۴. داروهای بیولوژیک (Biologic DMARDs)</h4>
+    <p>این داروها با هدف‌گیری مولکولی دقیق واسطه‌های سیستم ایمنی، تحول عظیمی در مهار تخریب مفصل پدید آورده‌اند:</p>
+
+    <div class="mini-card mc-blue" style="margin-bottom:15px;">
+      <h5>الف) مهارکننده‌های فاکتور نکروز تومور (Anti-TNF Agents)</h5>
+      <ul class="list-styled blue">
+        <li><span class="li-content"><strong>اینفلیکسیمب (Infliximab):</strong> آنتی‌بادی مونوکلونال کایمریک (موش-انسان) به‌صورت انفوزیون وریدی در مراکز درمانی.</span></li>
+        <li><span class="li-content"><strong>آدالیمومب (Adalimumab) و گولیمومب (Golimumab):</strong> آنتی‌بادی‌های کاملاً انسانی‌شده به‌صورت تزریق زیرجلدی.</span></li>
+        <li><span class="li-content"><strong>سرتولیزومب (Certolizumab):</strong> ساختار پگیله‌شده (Pegylated Fab') ضد TNF با ماندگاری بالا.</span></li>
+        <li><span class="li-content"><strong>اتانرسپت (Etanercept):</strong> پروتئین الحاقی متشکل از گیرنده حل‌شونده TNF متصل به قطعه Fc آنتی‌بادی IgG انسانی.</span></li>
+        <li><span class="li-content"><strong class="em">موارد ممنوعیت مصرف (Contraindications):</strong> وجود عفونت‌های فعال چرکی (سل، سلولیت)، حساسیت مفرط، هپاتیت B مزمن، نارسایی احتقانی قلب کلاس III و IV (CHF)، و بیماری‌های دمیلینه‌کننده عصبی نظیر ام‌اس (MS).</span></li>
+        <li><span class="li-content"><strong class="em">غربالگری اجباری سل:</strong> <strong>تمام بیماران قبل از آغاز درمان ضد TNF باید از نظر بیماری سل نهفته غربالگری شوند (All patients are screened for TB)</strong> با استفاده از تست PPD، تست IGRA و عکس قفسه سینه تا از فعال‌شدن کشنده مایکوباکتریوم جلوگیری گردد.</span></li>
+      </ul>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>ب) آنتاگونیست گیرنده اینترلوکین-۱</h5>
+        <div class="kv-row"><span class="kv-key">دارو:</span><span class="kv-value"><strong>آناکینکرا (Anakinra)</strong></span></div>
+        <div class="kv-row"><span class="kv-key">مکانیسم:</span><span class="kv-value">مهار اختصاصی گیرنده IL-1.</span></div>
+        <div class="kv-row"><span class="kv-key">جایگاه:</span><span class="kv-value">اثربخشی متوسط (Modest efficacy) دارد؛ با آمدن داروهای مؤثرتر، امروزه به‌ندرت در خطوط اول RA تجویز می‌شود.</span></div>
+      </div>
+
+      <div class="mini-card mc-teal">
+        <h5>ج) مهارکننده تحریک هم‌زمان سلول T</h5>
+        <div class="kv-row"><span class="kv-key">دارو:</span><span class="kv-value"><strong>آباتاسپت (Abatacept)</strong></span></div>
+        <div class="kv-row"><span class="kv-key">مکانیسم:</span><span class="kv-value">پروتئین فیوژن حاوی CTLA-4؛ اتصال بین CD80/86 بر روی APC با CD28 بر روی سلول T را مسدود کرده و مانع فعال‌سازی آبشار لنفوسیت T می‌شود.</span></div>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>د) داروی تخلیه‌کننده لنفوسیت B</h5>
+        <div class="kv-row"><span class="kv-key">دارو:</span><span class="kv-value"><strong>ریتوکسی‌مب (Rituximab)</strong></span></div>
+        <div class="kv-row"><span class="kv-key">مکانیسم:</span><span class="kv-value">آنتی‌بادی مونوکلونال علیه گیرنده <strong>CD20</strong> روی سطح سلول‌های B؛ سبب مهار تولید اتوآنتی‌بادی‌ها شده و به‌ویژه در بیماران سرومثبت (RF و Anti-CCP بالا) بسیار مؤثر است.</span></div>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>هـ) مهارکننده گیرنده اینترلوکین-۶</h5>
+        <div class="kv-row"><span class="kv-key">دارو:</span><span class="kv-value"><strong>توسیلیزومب (Tocilizumab)</strong></span></div>
+        <div class="kv-row"><span class="kv-key">اثرات:</span><span class="kv-value">آنتی‌بادی علیه IL-6R؛ سرکوب سریع واکنش‌گرهای فاز حاد (ESR/CRP)، کاهش سایتوکاین‌ها، مهار استئوکلاست‌ها و توقف تخریب مفصل.</span></div>
+        <div class="kv-row"><span class="kv-key">عوارض:</span><span class="kv-value">نوتروپنی، ترومبوسیتوپنی، افزایش کلسترول LDL و خطرات عفونت.</span></div>
+      </div>
+    </div>
+
+    <h4>۵. داروهای صناعی هدفمند مهارکننده ژانوس کیناز (JAK Inhibitors)</h4>
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">🧬</span>
+      <div>
+        <strong>مهار مسیر سیگنال‌دهی داخل سلولی (JAK-STAT Pathway):</strong>
+        <br>
+        برخلاف آنتی‌بادی‌های بیولوژیک تزریقی، این داروها مولکول‌های سنتتیک کوچکی با <strong>مصرف خوراکی</strong> هستند. آنزیم‌های خانواده ژانوس کیناز درون‌سلولی، پیام‌رسانی طیف وسیعی از سایتوکاین‌ها را بر عهده دارند:
+        <br>
+        <strong>سایتوکاین‌های وابسته به JAK:</strong> اینترلوکین‌های <strong>IL-2, IL-4, IL-6, IL-7, IL-9, IL-15, IL-21</strong> و اینترفرون گاما (<strong>IFN-γ</strong>) که محرک اصلی تکثیر و تمایز سلول‌های T و B هستند.
+      </div>
+    </div>
+
+    <div class="mini-card mc-orange">
+      <h5>داروهای این دسته، اثرات و الزامات ایمنی بالینی</h5>
+      <ul class="list-styled orange">
+        <li><span class="li-content"><strong>داروهای اصلی تأییدشده:</strong> <strong>توفاسیتینیب (Tofacitinib)</strong> و <strong>باریسیتینیب (Baricitinib)</strong>.</span></li>
+        <li><span class="li-content"><strong>عوارض جانبی نیازمند توجه دقیق:</strong>
+          <br>
+          ۱. افزایش آنزیم‌های ترانس‌آمیناز کبدی (Transaminases)
+          <br>
+          ۲. نوتروپنی و سرکوب خونی
+          <br>
+          ۳. افزایش چربی‌ها و کلسترول پلاسما (Cholesterol)
+          <br>
+          ۴. افزایش کراتینین سرم (Creatinine)
+          <br>
+          ۵. <strong>افزایش خطر ترومبوز و حوادث ترومبوآمبولیک عروقی (Thrombosis / DVT / PE)</strong> و عود عفونت‌های هرپس زوستر (زونا).</span></li>
+      </ul>
+    </div>
+
+    <div class="infobox ib-blue">
+      <span class="ib-icon">💡</span>
+      <div>
+        <strong>جمع‌بندی پیام استاد:</strong> درمان آرتریت روماتوئید با کشف مکانیسم‌های ایمونوپاتوژنز و ورود درمان‌های بیولوژیک و مهارکننده‌های مولکولی وارد عصری طلایی شده است. کلید موفقیت بیماران، تشخیص زودهنگام در پنجره فرصت (Window of Opportunity)، شروع بی‌درنگ متوتروکسات، استفاده هوشمندانه از کورتون دوز پایین برای سرکوب فرسایش، و در صورت نیاز ارتقا به رژیم‌های بیولوژیک هدفمند است.
+      </div>
+    </div>
+  </div>
+
+</div> <!-- END MAIN -->
+
+<!-- ===================== FOOTER ===================== -->
+<div class="footer">
+  دانشگاه علوم پزشکی و خدمات بهداشتی درمانی آزاد یزد | دپارتمان روماتولوژی
+  <br>
+  تنظیم احمدرضا عبداللهی پور بر اساس تدریس صوتی، یادداشت‌های بالینی و اسلایدهای آموزشی دکتر دهقان
+  <br>
+</div>
+
+<!-- ===== نوار شناور ابزار چند پلتفرمی ===== -->
+<div id="highlight-panel">
+  <span>🖍️ ابزار مطالعه:</span>
+  <button class="hl-btn hl-btn-yellow" onclick="applyColorHighlight('#fff59d')" title="زرد"></button>
+  <button class="hl-btn hl-btn-green" onclick="applyColorHighlight('#c8e6c9')" title="سبز"></button>
+  <button class="hl-btn hl-btn-blue" onclick="applyColorHighlight('#bbdefb')" title="آبی"></button>
+  <button class="hl-btn hl-btn-pink" onclick="applyColorHighlight('#f8bbd0')" title="صورتی"></button>
+  <button class="panel-action-btn" onclick="addNoteAtSelection()">📝 یادداشت</button>
+  <button class="panel-action-btn" onclick="viewAllNotes()">🔍 لیست یادداشت‌ها</button>
+  <button class="panel-action-btn panel-action-btn-red" onclick="clearSelectedHighlight()">❌ پاک‌کردن</button>
+  <button class="panel-action-btn" style="background:#2e7d32;" onclick="exportModifiedHTML()">📥 خروجی گرفتن از فایل</button>
+</div>
+
+<!-- پنجره مودال ثبت/ویرایش یادداشت -->
+<div class="modal-overlay" id="note-edit-modal">
+  <div class="modal-card">
+    <h4 id="modal-title">ثبت یادداشت جدید در این محل</h4>
+    <textarea class="modal-textarea" id="modal-note-input" placeholder="نکته مهم کلاسی یا بالینی خود را جهت مرور سریع بنویسید..."></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="saveNoteChanges()">💾 ذخیره تغییرات</button>
+      <button class="btn btn-danger" id="btn-delete-note" onclick="deleteActiveNote()">❌ حذف یادداشت</button>
+      <button class="btn btn-secondary" onclick="closeNoteModal()">انصراف</button>
+    </div>
+  </div>
+</div>
+
+<!-- پنجره مودال لیست همه‌ی یادداشت‌ها -->
+<div class="modal-overlay" id="all-notes-modal">
+  <div class="modal-card" style="max-height: 80%; overflow-y: auto; max-width: 600px;">
+    <h4>📋 تمام یادداشت‌های ثبت‌شده شما</h4>
+    <div id="all-notes-list" style="margin-bottom: 20px;">
+      <!-- لیست پویا به صورت خودکار پر خواهد شد -->
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeAllNotesModal()">بستن پنجره</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== JAVASCRIPT LOGIC ===================== -->
+<script>
+  const storageStateKey = "rheumatoid_arthritis_dehghan_interactive_state";
+  let savedRange = null; 
+  let activeMarker = null;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadPageState();
+  });
+
+  function savePageState() {
+    const mainHTML = document.querySelector('.main').innerHTML;
+    localStorage.setItem(storageStateKey, mainHTML);
+  }
+
+  function loadPageState() {
+    const savedHTML = localStorage.getItem(storageStateKey);
+    if (savedHTML) {
+      document.querySelector('.main').innerHTML = savedHTML;
+    }
+  }
+
+  function applyColorHighlight(colorHex) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا متنی از جزوه را با ماوس یا لمس طولانی انتخاب کنید.");
+      return;
+    }
+
+    const main = document.querySelector('.main');
+    const originalEditable = main.contentEditable;
+    
+    main.contentEditable = "true";
+    
+    try {
+      document.execCommand("styleWithCSS", false, true);
+      document.execCommand("backColor", false, colorHex);
+    } catch (e) {
+      console.error("خطای هایلایت:", e);
+    }
+    
+    main.contentEditable = originalEditable;
+    selection.removeAllRanges();
+    savePageState();
+  }
+
+  function clearSelectedHighlight() {
+    applyColorHighlight('transparent');
+  }
+
+  function addNoteAtSelection() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا بخشی از متن را با کشیدن انگشت یا ماوس انتخاب کنید تا یادداشت به آنجا متصل شود.");
+      return;
+    }
+
+    savedRange = selection.getRangeAt(0).cloneRange();
+    
+    activeMarker = null; 
+    document.getElementById("modal-title").innerText = "ثبت یادداشت جدید در این محل";
+    document.getElementById("modal-note-input").value = "";
+    document.getElementById("btn-delete-note").style.display = "none";
+    document.getElementById("note-edit-modal").style.display = "flex";
+  }
+
+  function saveNoteChanges() {
+    const text = document.getElementById("modal-note-input").value.trim();
+    if (!text) {
+      alert("لطفاً متن یادداشت را وارد کنید.");
+      return;
+    }
+
+    if (activeMarker === null) {
+      if (savedRange) {
+        const marker = document.createElement("span");
+        marker.className = "note-marker";
+        marker.setAttribute("data-note", text);
+        marker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+        marker.contentEditable = "false";
+        
+        try {
+          savedRange.collapse(false);
+          savedRange.insertNode(marker);
+        } catch (e) {
+          console.error("Error inserting marker:", e);
+          alert("امکان درج یادداشت در این بخش به دلیل تداخل تگ‌ها وجود ندارد. لطفاً متن ساده‌تری را انتخاب کنید.");
+        }
+        savedRange = null;
+      } else {
+        alert("محدوده متن انتخاب شده معتبر نیست. لطفاً مجدداً متن را انتخاب کنید.");
+        return;
+      }
+    } else {
+      activeMarker.setAttribute("data-note", text);
+      activeMarker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+    }
+
+    closeNoteModal();
+    savePageState();
+  }
+
+  function deleteActiveNote() {
+    if (activeMarker && confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      activeMarker.remove();
+      closeNoteModal();
+      savePageState();
+    }
+  }
+
+  function closeNoteModal() {
+    document.getElementById("note-edit-modal").style.display = "none";
+    activeMarker = null;
+    savedRange = null;
+  }
+
+  document.addEventListener("click", (e) => {
+    const marker = e.target.closest(".note-marker");
+    if (marker) {
+      activeMarker = marker;
+      const savedText = activeMarker.getAttribute("data-note") || "";
+      document.getElementById("modal-title").innerText = "مشاهده و ویرایش یادداشت";
+      document.getElementById("modal-note-input").value = savedText;
+      document.getElementById("btn-delete-note").style.display = "inline-block";
+      document.getElementById("note-edit-modal").style.display = "flex";
+    }
+  });
+
+  function viewAllNotes() {
+    const markers = document.querySelectorAll(".note-marker");
+    const listContainer = document.getElementById("all-notes-list");
+    listContainer.innerHTML = "";
+
+    if (markers.length === 0) {
+      listContainer.innerHTML = '<p style="text-align:center; color:var(--muted); font-size:14px; padding:20px 0;">هیچ یادداشتی در کل متن ثبت نشده است.</p>';
+      document.getElementById("all-notes-modal").style.display = "flex";
+      return;
+    }
+
+    markers.forEach((marker, index) => {
+      const noteText = marker.getAttribute("data-note") || "";
+      const context = marker.previousSibling ? marker.previousSibling.textContent.slice(-35) : "...";
+      
+      const card = document.createElement("div");
+      card.className = "mini-card mc-blue";
+      card.style.marginBottom = "12px";
+      card.innerHTML = `
+        <div style="font-size:11px; color:var(--muted); margin-bottom:5px;">یادداشت شماره ${index + 1} (متن مجاور: "...${escapeHTML(context)}")</div>
+        <div style="font-weight:bold; font-size:14px; line-height:1.6; white-space:pre-wrap; color:var(--text);">${escapeHTML(noteText)}</div>
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button onclick="scrollToMarker(${index})" class="tag tag-blue" style="border:none; cursor:pointer; padding:4px 10px;">🔍 پرش به محل یادداشت</button>
+          <button onclick="deleteMarkerFromList(${index})" class="tag tag-red" style="border:none; cursor:pointer; padding:4px 10px;">❌ حذف</button>
+        </div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    document.getElementById("all-notes-modal").style.display = "flex";
+  }
+
+  window.scrollToMarker = function(index) {
+    const markers = document.querySelectorAll(".note-marker");
+    if (markers[index]) {
+      closeAllNotesModal();
+      markers[index].scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      const originalBg = markers[index].style.backgroundColor;
+      markers[index].style.backgroundColor = "#ff5252";
+      markers[index].style.transform = "scale(1.4)";
+      
+      setTimeout(() => {
+        markers[index].style.backgroundColor = originalBg;
+        markers[index].style.transform = "scale(1)";
+      }, 1500);
+    }
+  };
+
+  window.deleteMarkerFromList = function(index) {
+    if (confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      const markers = document.querySelectorAll(".note-marker");
+      if (markers[index]) {
+        markers[index].remove();
+        savePageState();
+        viewAllNotes(); 
+      }
+    }
+  };
+
+  function exportModifiedHTML() {
+    const docClone = document.cloneNode(true);
+    const currentMainHTML = document.querySelector('.main').innerHTML;
+    docClone.querySelector('.main').innerHTML = currentMainHTML;
+    
+    const htmlString = '<!DOCTYPE html>\n' + docClone.documentElement.outerHTML;
+    
+    const blob = new Blob([htmlString], { type: "text/html;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "rheumatoid_arthritis_session1_interactive_output.html";
+    link.click();
+  }
+
+  function closeAllNotesModal() {
+    document.getElementById("all-notes-modal").style.display = "none";
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+</script>
+
+</body>
+</html>
